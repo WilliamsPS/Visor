@@ -1,0 +1,265 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.detalle-humedad {
+    /* background: rgba(0, 0, 0, 65%); */
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*padding: 14px;*/
+    z-index: 1000;
+    color: #212121;
+}
+
+.btn-iot {
+    border: none;
+    background: white;
+    padding: 7px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.btn-iot-dispositivo {
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    background: aliceblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.btn-iot-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-iot-label small {
+    font-size: 12px !important;
+}
+
+.border-r-1 {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+
+.modal-iot {
+    margin-top: 55px;
+    background: #eff3f8;
+    position: fixed;
+    width: 300px;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.modal-heder {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.modal-scroll {
+    overflow: auto;
+    height: 80vh !important;
+}
+
+
+.modal-iot.mostrar {
+    height: 100vh;
+}
+
+
+.btn-close-modal-iot {
+    border: none;
+    background: transparent;
+}
+
+.slide-up {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+
+/* COLORES*/
+
+.color-success {
+    color: #2ECC71;
+}
+
+.color-warning {
+    color: #F5B041;
+}
+
+.color-error {
+    color: #E74C3C;
+}
+
+.color-grey {
+    color: #808B96;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #chart {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  /*barra*/
+  .contenedor-navs {
+    display: flex;
+}
+
+.logo, .barra {
+    display: flex;
+    align-items: center;
+    
+    background-color: #bd0003;
+    min-height: 55px;
+    
+    
+}
+
+.barra a:hover {
+    color: #ffffff;
+}
+
+.barra a:last-child {
+    margin-left: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 55px;
+}
+
+.slide-up {
+    animation: slide-up 0.5s ease-in-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+/*mapa*/
+#map {
+    width: 100%;
+    height: 90vh;
+    /* margin-top: 40px; */
+  }
+  
+  /* Estilos para el cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado de la página */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .custom-icon {
+    display: none;
+  }
+  
+  /* Estilos para el elemento que debe sobresalir */
+  #graficos-container {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 350px;
+    height: 400px; /* Ajustamos la altura a 300px */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.61); /* Hacemos el fondo semi-transparente */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden; /* Para ocultar contenido que se desborde */
+  }
+
+  
+/* Estilos para el fondo detrás del modal */
+.fondo-modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo y ajusta la opacidad aquí */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Oculta el fondo inicialmente */
+  }
+  
+  /* Estilos para el modal */
+  .modal-contenido {
+    background-color: #fefefe;
+    margin-top: 10%;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 375px;
+    position: relative;
+  }
+  
+  .cerrar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cerrar-modal:hover,
+  .cerrar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 

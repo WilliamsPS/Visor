@@ -1,0 +1,7 @@
+# Ignorar el directorio .history
+.history/
+
+# Ignorar el directorio __pycache__
+__pycache__/
+
+git.py
